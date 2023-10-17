@@ -13,4 +13,5 @@
 .selected {
     opacity: 1;
     transform: translateX(-3%);
+    transition: 0.4s;
 }
