@@ -9,3 +9,8 @@
         /* transform: scale(1.04); */
     }
 }
+
+.selected {
+    opacity: 1;
+    transform: translateX(-3%);
+}
