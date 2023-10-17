@@ -4,6 +4,7 @@ import Edit from './edit'
 import Trash from './trash'
 import { useStore } from './Store/store'
 import {useForm} from 'react-hook-form'
+import classes from './todoItem.module.css'
 export default function TodoItem(props) {
   const{id,title}=props
     const[displayForm,setDisplayUpdateForm]=useState(false)
@@ -21,7 +22,7 @@ export default function TodoItem(props) {
    
   return (
     <>
-    <div className="relative w-full">
+    <div className={`${classes.content} relative w-full`}>
      {deleteForm && <div className='absolute flex justify-center h-full w-full text-white backdrop-brightness-[.2] z-10 rounded-lg animate-pulse-once'>
         <div className='flex justify-center flex-col items-center gap-2'>
         <div className='font-bold font-mono max-md:text-sm'>Do you want to delete this Todo? </div>

@@ -31,7 +31,7 @@ let list=todos.map(items=><ol key={items.id}><TodoItem
         <div className='text-2xl font-bold italic'>MY TODOS</div>
        </div>
     </header>
-    <div className='mt-20 pb-20 flex items-start max-lg:flex-col max-lg:items-center justify-center max-lg:gap-20 gap-20'>
+    <div className='mt-20 max-md:mt-15 pb-20 flex items-start max-lg:flex-col max-lg:items-center justify-center max-lg:gap-20 gap-20'>
       <div className='flex items-center flex-col gap-5 w-[40%] max-lg:w-[80%]'>
         <div className='text-lg font-mono'>Add New Todo</div>
         <div className='w-[60%] max-md:w-full'>
