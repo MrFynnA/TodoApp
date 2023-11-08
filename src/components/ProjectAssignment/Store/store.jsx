@@ -20,7 +20,7 @@ const store=(set)=>({
             return {todos:newTodos}
         }
      },false,'update  Todo'),
-     clearAll:()=>set(store=>({todos:[]}),false)
+     clearAll:()=>set({todos:[]},false)
 })
 
 
